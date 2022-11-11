@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
 
 @Schema({ versionKey: false })
-export class Expense {
+export class Expense extends Document {
     @Prop()
     date: Date;
 
